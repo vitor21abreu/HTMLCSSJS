@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro do Usuário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+        }
+
+        .inline {
+            display: flex;
+            gap: 10px;
+        }
+
+        .inline div {
+            flex: 1;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CADASTRO DO USUÁRIO</h1>
+
+<form>
+
+    <div class="radio-group">
+        <label><input type="radio" name="tipo" value="individual"> Individual</label>
+        <label><input type="radio" name="tipo" value="grupo"> Grupo Terapêutico</label>
+    </div>
+
+    <label>Data:
+        <input type="date" name="data">
+    </label>
+
+    <fieldset>
+        <legend>1 - Identificação</legend>
+
+        <label>Nome:
+            <input type="text" name="nome">
+        </label>
+
+        <div class="inline">
+            <div>
+                <label>CPF:
+                    <input type="text" name="cpf">
+                </label>
+            </div>
+            <div>
+                <label>RG:
+                    <input type="text" name="rg">
+                </label>
+            </div>
+        </div>
+
+        <label>Endereço:
+            <input type="text" name="endereco">
+        </label>
+
+        <div class="inline">
+            <div>
+                <label>Nº:
+                    <input type="text" name="numero">
+                </label>
+            </div>
+            <div>
+                <label>Bairro:
+                    <input type="text" name="bairro">
+                </label>
+            </div>
+            <div>
+                <label>CEP:
+                    <input type="text" name="cep">
+                </label>
+            </div>
+        </div>
+
+        <div class="inline">
+            <div>
+                <label>Telefone:
+                    <input type="text" name="telefone">
+                </label>
+            </div>
+            <div>
+                <label>Email:
+                    <input type="email" name="email">
+                </label>
+            </div>
+        </div>
+
+        <div class="inline">
+            <div>
+                <label>Data de Nascimento:
+                    <input type="date" name="data_nascimento">
+                </label>
+            </div>
+            <div>
+                <label>Idade:
+                    <input type="number" name="idade">
+                </label>
+            </div>
+            <div>
+                <label>Gênero:
+                    <select name="genero">
+                        <option value="">Selecione</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class="inline">
+            <div>
+                <label>Escolaridade:
+                    <input type="text" name="escolaridade">
+                </label>
+            </div>
+            <div>
+                <label>Profissão:
+                    <input type="text" name="profissao">
+                </label>
+            </div>
+        </div>
+
+        <div class="inline">
+            <div>
+                <label>Naturalidade:
+                    <input type="text" name="naturalidade">
+                </label>
+            </div>
+            <div>
+                <label>Estado Civil:
+                    <input type="text" name="estado_civil">
+                </label>
+            </div>
+            <div>
+                <label>Religião:
+                    <input type="text" name="religiao">
+                </label>
+            </div>
+        </div>
+
+        <label>Aluno UNIME:
+            <input type="radio" name="aluno_unime" value="nao"> Não
+            <input type="radio" name="aluno_unime" value="sim"> Sim
+        </label>
+
+        <div class="inline">
+            <div>
+                <label>Curso:
+                    <input type="text" name="curso">
+                </label>
+            </div>
+            <div>
+                <label>Semestre:
+                    <input type="text" name="semestre">
+                </label>
+            </div>
+            <div>
+                <label>Turno:
+                    <input type="text" name="turno">
+                </label>
+            </div>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>2 - Dados sobre a Família</legend>
+
+        <label>Nome do Pai:
+            <input type="text" name="nome_pai">
+        </label>
+
+        <div class="inline">
+            <div>
+                <label>Profissão:
+                    <input type="text" name="profissao_pai">
+                </label>
+            </div>
+            <div>
+                <label>Escolaridade:
+                    <input type="text" name="escolaridade_pai">
+                </label>
+            </div>
+            <div>
+                <label>Idade:
+                    <input type="number" name="idade_pai">
+                </label>
+            </div>
+        </div>
+
+        <label>Nome da Mãe:
+            <input type="text" name="nome_mae">
+        </label>
+
+        <div class="inline">
+            <div>
+                <label>Profissão:
+                    <input type="text" name="profissao_mae">
+                </label>
+            </div>
+            <div>
+                <label>Escolaridade:
+                    <input type="text" name="escolaridade_mae">
+                </label>
+            </div>
+            <div>
+                <label>Idade:
+                    <input type="number" name="idade_mae">
+                </label>
+            </div>
+        </div>
+
+        <label>Renda Familiar:
+            <select name="renda_familiar">
+                <option value="">Selecione</option>
+                <option>Até 2 salários mínimos</option>
+                <option>De 2 a 5 salários mínimos</option>
+                <option>Acima de 5 salários mínimos</option>
+            </select>
+        </label>
+
+        <label>Responsável presente na triagem:
+            <input type="text" name="responsavel_triagem">
+        </label>
+
+    </fieldset>
+
+    <button type="submit">Salvar Cadastro</button>
+
+</form>
+
+</body>
+</html>
